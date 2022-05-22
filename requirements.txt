@@ -13,3 +13,4 @@ nsepython==0.0.971
 requests==2.26.0
 six==1.15.0
 typing-extensions==3.7.4
+wikipedia==1.4.0
