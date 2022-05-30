@@ -141,7 +141,7 @@ class Model:
             model.add(LSTM(50, return_sequences=True, input_shape=(100, 1), activation='sigmoid'))
             model.add(LSTM(50))
             model.add(Dense(1))
-            model.compile(loss='mean_squared_error', optimizer='adam',metrics=['accuracy'])
+            model.compile(loss='mean_squared_error', optimizer='adam',metrics=['mse'])
 
             model.fit(X_train, y_train, validation_data=(X_test, ytest), epochs=30, batch_size=24, verbose=1,workers=4,
                       use_multiprocessing=True)
